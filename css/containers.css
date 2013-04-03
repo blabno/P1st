@@ -1,0 +1,254 @@
+
+
+/*::::::::::::::: PAGE CONTAINER :::::::::::::::*/
+
+#wrapper-ht { /* sets up properties for bottom fixed footer */
+	width: 100%;
+	min-height: 100%; /* ie6 hack */
+	height: auto !important; /* ie6 hack */
+	height: 100%;
+	margin: 0 auto -280px;
+}
+
+/*::::::::::::::: HEADER :::::::::::::::*/
+
+#headerWrap {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+}
+	#headerBG1 {
+		width: 100%;
+		background: url("../img/bg-rpt-hdr.png") repeat-x;
+	}
+	#headerBG2 {
+		width: 100%;
+		background: url("../img/bg-grn-curve.png") bottom center no-repeat;		
+	}
+#header {
+	position: relative;
+	width: 1050px;
+	height: 239px;
+	margin: 0 auto;
+}
+		#topNav { /* For styling, see list-links.css */
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		#brand {
+			float: left;
+			margin-top: 10px;
+			margin-left: 67px;
+		}
+	/*::::::::::::::: NAV :::::::::::::::*/
+
+	/* see jkmegamenu.css */
+	
+	/*::::::::::::::: jbmarket Slider :::::::::::::::*/
+	
+	.null {
+		height: 80px;
+	}
+	
+	/* see jb_fws.css */
+	
+	/*::::::::::::::: spPhoto :::::::::::::::*/
+	
+	#spPhoto1 {
+		width: 100%;
+		height: 300px;
+		background: url("../img/sp-hdr-08.jpg") top center no-repeat;
+	}
+	
+	/*::::::::::::::: handheld screens :::::::::::::::*/
+	
+	@media only screen and (max-device-width: 480px) {   
+	    #headerWrap {
+			position: relative;
+		}
+		
+		.null {
+			height: 0;
+		}
+		
+		#spPhoto1 {
+			margin-top: -159px;
+		}
+	}
+	
+	
+/*::::::::::::::: PAGE CONTENT CONTAINERs :::::::::::::::*/
+
+#content {
+	clear: both;
+	width: 1050px;
+	margin: 0 auto;
+	padding-top: 45px;
+	padding-bottom: 50px;
+	background: url("../img/ss-shadow.png") top center no-repeat;
+	overflow: auto;
+}
+	.article {
+		width: 1050px;
+		margin-bottom: 50px;
+	}
+
+/*********** SUBPAGE CONTAINERs ***********/
+
+.col1 {
+		float: left;
+		width: 698px;
+		padding-right: 20px;
+		padding-bottom: 30px;
+		margin-right: 15px;
+		border-right: 1px solid #e5e5e5;
+	}
+		.col1 > h2 {
+			margin-top: 15px;
+		}
+		.col1 h2 + p {
+			margin-top: 0;
+			padding-top: 3px;
+		}
+		.callOut {
+			padding: 10px;
+			border: 1px dashed #ccc;
+			background: #f1fbff;
+		}
+	.col2 {
+		float: left;
+		width: 275px;
+		padding: 0 15px 15px;
+	}
+
+/*::::::::::::::: TABLE :::::::::::::::*/	
+
+/* table.tblStyle {
+	width: 100%;
+}
+	.tblStyle td {
+		padding: 2px;
+		font-size: 13px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+table.tblpullBx {
+	border: 1px solid #ccc;
+}
+.pullBx {
+	float: right;
+	width: 290px;
+	margin-left: 25px;
+}
+.schedule {
+	width: 695px;
+	margin-bottom: 15px;
+}
+	.tblpullBx th {
+		text-align: left;
+		background: #f9f9f9;
+	}
+	.tblpullBx td, .tblpullBx th {
+		padding: 8px;
+		border-bottom: 1px solid #e5e5e5;
+		vertical-align: middle;
+	}
+	.tblpullBx td {
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.schedule td {
+		border-left: 1px solid #e5e5e5;
+	}
+	.schedule th {
+		background: #f1fbff;
+	}
+	
+table.tblSponsor {
+	width: 100%;
+}
+	.tblSponsor th {
+		padding: 7px;
+		background: #f0f0f0;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	.tblSponsor td {
+		padding: 7px;
+		border-bottom: 1px solid #e5e5e5;
+		border-left: 1px solid #e5e5e5;
+		font-size: 13px;
+		text-align: center;
+	}
+		.tblSponsor td:first-child {
+			border-left: 0 none;
+			text-align: left;
+		}
+
+	.bullet {
+		font-family: Tahoma, sans-serif;
+		font-size: 2em !important; 
+		color: #77d9fe; 
+		 
+	} */
+	
+/*::::::::::::::: FOOTER :::::::::::::::*/
+
+#footer, .push {  /* sets up properties for bottom fixed footer */
+	height: 280px;
+}
+#footer { /* For footer link lists refer to lists-links.css */
+	width: 100%;
+	background: url("../img/ftrLine.png") top center no-repeat;
+}
+	#ftr-content { 
+		width: 1050px;
+		margin: 0 auto;
+		padding-top: 25px;
+	}
+	#ftr-content, #ftr-content p {
+		font-family: 'Novecentowide-Normal', sans-serif;
+		font-weight: normal;
+		font-size: 11px;
+		line-height: 18px;
+	}
+	.ftrcol {
+		float: left;
+		width: 172px;
+		padding-left: 40px;
+	}
+		#ftr-content .ftrcol:first-child {
+			padding-left: 0;
+		}
+	#contactNfo {
+		float: right;
+		width: 220px;
+		padding-left: 20px;
+		border-left: 1px solid #e5e5e5;
+	}
+		#contactNfo, #contactNfo p {
+			font-family: 'open-sans', Arial, sans-serif;
+			font-size: 12px;
+		}
+
+/*::::::::::::::: SITE CREDIT, COPYRIGHT :::::::::::::::*/
+
+#credit, #copyright {
+	width: 525px;
+	height: 10px;
+	padding-top: 30px;
+	font-family: 'open-sans', Arial, sans-serif;
+	font-size: 11px;
+}
+#credit { /* see links-lists.css for link properties */
+	clear: both;
+	float: left;	
+	color: #ccc;
+}
+	
+#copyright {
+	float: right;
+	text-align: right;
+}

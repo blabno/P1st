@@ -1,0 +1,123 @@
+/* jkmegamenu navbar */
+
+/* #navWrap {
+	float: right;
+	margin-top: 145px;
+	width: 657px;
+	height: 25px;
+} */
+
+#jkmegamenu {
+	float: right;
+	margin-top: 145px;
+	width: 647px;
+	height: 25px;
+	text-align: right;
+}
+	#jkmegamenu div {
+		display: inline-block;
+		margin-left: 30px;
+	}
+		#jkmegamenu div a {
+			display: block;
+			height: 25px;
+			font-family: 'Novecentowide-Medium', sans-serif;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 20px;
+			color: #404040;
+			text-decoration: none;
+		}
+		#jkmegamenu div a:hover {
+			color: #169b51;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+/* jkmegamenu submenus */
+
+.megamenu {
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 0;
+	margin-left: 0;
+	border: 1px solid #dcf0e5;
+	background: white;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: #777 0px 2px 3px;
+	-moz-box-shadow: #777 0px 2px 3px;
+	box-shadow: #777 0px 2px 3px;
+	behavior: url("PIE.htc");
+	padding: 10px;
+	z-index: 100;
+}
+	/* @media screen and (-webkit-min-device-pixel-ratio:0) { 
+	
+		.megamenu {
+			margin-left: -115px;
+		}
+	
+	} */
+	
+	 /* Firefox */
+	@-moz-document url-prefix()
+	{
+		.megamenu {
+			margin-left: -63px;
+		}
+	}
+
+.megamenu .column {
+	float: left;
+	/* width: 330px; */
+	margin-right: 5px;
+}
+
+	#megamenu1 .column {
+		float: left;
+		width: 240px;
+	}
+	#megamenu2 .column {
+		float: left;
+		width: 345px;
+	}
+	#megamenu3 .column {
+		float: left;
+		width: 290px;
+	}
+
+.megamenu .column ul {
+	margin: 0;
+	padding: 0 0 10px 10px;
+	list-style-type: none;
+}
+
+.megamenu .column ul li {
+	font-family: 'Novecentowide-Normal', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.megamenu .column h4 {
+	background: #eee;
+	margin: 0 0 5px 0;
+	padding: 3px 3px 3px 7px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	behavior: url("PIE.htc");
+}
+
+.megamenu .column ul li a {
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+}
+	.megamenu .column ul li a:hover {
+		padding-left: 45px;
+		background: url("../img/arrw-lnk.png") 3px 11px no-repeat;
+	}

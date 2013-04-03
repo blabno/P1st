@@ -1,0 +1,125 @@
+
+.JB_FWS * {
+    margin: 0;
+	padding: 0;
+}
+
+.JB_FWS {
+    width: 100%;
+    height: 648px;
+    float: left;
+    position: relative;
+	overflow: hidden;
+}
+
+	@media only screen and (max-device-width: 480px) {		
+		.JB_FWS {
+			margin-top: -159px;
+		}
+	}
+
+.JB_Button_Left {
+    padding: 15px;
+    width: 21px;
+    height: 30px;
+    background-image: url("../img-ss/left_arrow.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    cursor: pointer;
+}
+
+.JB_Button_Left_BG {
+    padding: 15px;
+    width: 21px;
+    height: 30px;
+    background-color: #000;
+    opacity: 0.44;
+    position: absolute;
+    top: 80%;
+    left: 0;
+}
+
+.JB_Button_Right {
+    padding: 15px;
+    width: 21px;
+    height: 30px;
+    background-image: url("../img-ss/right_arrow.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 80%;
+    right: 0;
+    cursor: pointer;
+}
+
+.JB_Button_Right_BG {
+    padding: 15px;
+    width: 21px;
+    height: 30px;
+    background-color: #000;
+    opacity: 0.44;
+    position: absolute;
+    top: 80%;
+    right: 0;
+}
+
+.JB_Container {
+        
+    width: 9999px;
+    height: 648px;
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+	bottom: 0;
+    
+    cursor: hand;
+    cursor: grab!important;
+    cursor: -moz-grab;
+    cursor: url(https: //mail.google.com/mail/images/2/openhand.cur), pointer!important;
+    cursor: -webkit-grab;
+}
+
+.JB_Slide {
+    height: 648px;
+    float: left;
+    position: relative;
+}
+
+.JB_Slide_Content {
+    width: 863px;
+    height: 138px;
+    margin: 0 auto;
+    margin-top: 470px;
+    position: relative;
+}
+
+.JB_Pagination {
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.JB_Pages {
+    display: table;
+    margin: 0 auto;
+}
+
+.JB_Page {
+    background-image: url("../img-ss/pagination_button.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 13px;
+    height: 12px;
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.JB_Page:hover, .JB_Page.active  {
+    background-position: -13px 0px;
+}

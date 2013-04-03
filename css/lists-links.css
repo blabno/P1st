@@ -1,0 +1,154 @@
+
+/*::::::::::::::: GLOBAL LINK STYLES :::::::::::::::*/
+
+a { 
+	color: #0c91c8;
+	text-decoration: none; 
+}
+a:hover {
+	color: #169b51;
+	text-decoration: underline;
+}
+
+a:active, a:focus { outline: none; }
+
+a img {
+	vertical-align: middle;
+}
+
+a.Lrg {
+	display: block;
+	margin-right: 6px;
+	font-size: 22px;
+	letter-spacing: -1px;
+	text-align: right;
+}
+	a.Lrg:hover {
+		text-decoration: none;
+	}
+
+/* a.btn, a.btnLg, a.btnLg2 {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	behavior: url("PIE.htc");
+	background: #2faad9;
+	font-weight: 700;
+	color: #fff;
+}
+a.btn, a.btnLg {
+	padding: 5px 10px;
+}
+a.btnLg2 {
+	display: block;
+	padding: 25px 20px;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+}
+a.btnLg {
+	font-size: 18px;
+}
+a.btn:hover, a.btnLg:hover, a.btnLg2:hover {
+	background: #ca43bb;
+	text-decoration: none;
+} */
+
+/* unordered lists: links */
+
+ul {
+	list-style-type: none; 
+	padding: 0;
+	margin: 0; 
+}
+
+/*::::::::::::::: topNav LIST STYLES :::::::::::::::*/
+
+#topNav ul {
+	height: 35px;
+}
+#topNav li {
+	float: right;
+	padding-top: 6px; 
+	padding-left: 15px;
+}	
+#topNav li { /* , #topReg */
+	font-family: 'Novecentowide-Normal', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	color: #404040;
+}
+	#topNav li a {
+		display: inline;
+		color: #404040;
+	}
+		#topNav li a:hover {
+			color: #169b51;
+			text-decoration: none;
+		}
+	#topNav li img {
+		vertical-align: middle;
+	}
+
+/*::::::::::::::: PAGE CONTENT LIST STYLES :::::::::::::::*/
+
+.col2 ul {
+	margin-bottom: 15px;
+}
+	.col2 ul li {
+		padding: 5px 0;
+		border-bottom: 1px solid #e5e5e5;
+		font-family: 'Novecentowide-Normal', sans-serif;
+		font-size: 14px;
+	}
+		.col2 ul li:first-child {
+			border-top: 1px solid #e5e5e5;
+		}
+		.col2 ul li a:hover {
+			padding-left: 40px;
+			background: url("../img/arrw-lnk.png") 0 3px no-repeat;
+			text-decoration: none;
+		}
+	
+.col1 ul {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+	.col1 ul li {
+		padding: 0 0 8px 20px;
+		background: url("../img/bullet.png") 0 5px no-repeat;
+	}
+
+ul.pdf li {
+	padding: 0 0 5px 24px;
+	background: url("../img/acrobat.png") 0 3px no-repeat;
+}
+
+/*::::::::::::::: sdbrNav LIST STYLES :::::::::::::::*/
+
+/* ul.sdbrNav li, ul.cLnks li {
+	background: url("../img/arrow-sm.png") 0 7px no-repeat;
+}
+ul.sdbrNav li {
+	padding: 0 0 2px 9px;
+} */
+
+/*::::::::::::::: FOOTER COLUMN LIST STYLES :::::::::::::::*/
+
+.ftrcol a, .ftrcol a:visited, .ftrcol a:active { 
+	font-size: 11px;
+	line-height: 19px;
+	color: #323232;
+}
+	.ftrcol li a:hover {
+		color: #169b51;
+		text-decoration: none;
+	}
+
+#credit a {
+	font-size: 11px;
+	color: #ccc;
+}
+	#credit a:hover {
+		color: #169b51;
+	}
