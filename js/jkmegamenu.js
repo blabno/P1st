@@ -4,7 +4,7 @@
 * Visit http://www.javascriptkit.com/script/script2/jScale/ for full source code
 */
 
-
+jQuery.noConflict();
 
 var jkmegamenu={
 
@@ -26,11 +26,8 @@ alignmenu:function($, e, megamenu_pos){
 	var megamenu=this.megamenus[megamenu_pos]
 	var $anchor=megamenu.$anchorobj
 	var $menu=megamenu.$menuobj
-	//var menuleft=megamenu.offsetx //get x coord of menu
-	var menutop=$anchor.parents('div').eq(0).offset().top+$anchor.parents('div').eq(0).height()  //get y coord of menu
-	var menuleft=($(window).width()-(megamenu.offsetx-$(document).scrollLeft())>megamenu.actualwidth)? megamenu.offsetx : megamenu.offsetx-megamenu.actualwidth+megamenu.anchorwidth //get x coord of menu
-	//var menutop=($(window).height()-(megamenu.offsety-$(document).scrollTop()+megamenu.anchorheight)>megamenu.actualheight)? megamenu.offsety+megamenu.anchorheight : megamenu.offsety-megamenu.actualheight
-	//var menutop=megamenu.offsety+megamenu.anchorheight  //get y coord of menu
+	var menuleft=$anchor.offset().left; //get x coord of menu
+	var menutop=megamenu.offsety+megamenu.anchorheight  //get y coord of menu
 	$menu.css({left:menuleft+"px", top:menutop+"px"})
 	this.$shimobj.css({width:megamenu.actualwidth+"px", height:megamenu.actualheight+"px", left:menuleft+"px", top:menutop+"px", display:"block"})
 },
