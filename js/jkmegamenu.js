@@ -27,8 +27,8 @@ alignmenu:function($, e, megamenu_pos){
 	var $anchor=megamenu.$anchorobj
 	var $menu=megamenu.$menuobj
 	var menuleft=$anchor.offset().left; //get x coord of menu
-	var menutop=megamenu.offsety+megamenu.anchorheight  //get y coord of menu
-	$menu.css({left:menuleft+"px", top:menutop+"px"})
+    var menutop = $anchor.offset().top + megamenu.anchorheight  //get y coord of menu
+    $menu.css({left:menuleft+"px", top:menutop+"px"})
 	this.$shimobj.css({width:megamenu.actualwidth+"px", height:megamenu.actualheight+"px", left:menuleft+"px", top:menutop+"px", display:"block"})
 },
 
@@ -101,7 +101,16 @@ render:function($){
 				jkmegamenu.hidemenu(e, parseInt(menuinfo.$menuobj.get(0).getAttribute("_megamenupos")))
 			}, jkmegamenu.delaytimer)
 		})
-	} //end for loop
+        jQuery(document).scroll(function (event)
+        {
+            for (var i = 0; i < jkmegamenu.megamenus.length; i++) {
+                var megamenu = jkmegamenu.megamenus[i];
+                if (megamenu.$menuobj.css("display") != "none") {
+                    jkmegamenu.alignmenu($, event, i);
+                }
+            }
+        })
+    } //end for loop
 	if(/Safari/i.test(navigator.userAgent)){ //if Safari
 		$(window).bind("resize load", function(){
 			for (var i=0; i<jkmegamenu.megamenus.length; i++){
