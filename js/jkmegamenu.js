@@ -4,8 +4,6 @@
 * Visit http://www.javascriptkit.com/script/script2/jScale/ for full source code
 */
 
-jQuery.noConflict();
-
 var jkmegamenu={
 
 effectduration: 300, //duration of animation, in milliseconds
